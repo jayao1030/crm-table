@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/all.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row top-btn">
+      <button class="btn">重查</button>
+      <button class="btn">重算</button>
+      <button class="btn">案件完成</button>
+      <button class="btn">越級上呈</button>
+      <button class="btn">上送</button>
+      <button class="btn">待補追蹤</button>
+      <button class="btn">回補文件</button>
+      <button class="btn">暫存</button>
+      <button class="btn">他案訊息鍵檔</button>
+      <button class="btn">發送簡訊</button>
+      <button class="btn">發送e-mail</button>
+      <button class="btn">退件</button>
+      <button class="btn">撤銷</button>
+    </div>
+    <div class="row">
+      <ul class="navbar">
+        <li><a href="#" class="active">審核資料</a></li>
+        <li><a href="#">基本申請資料</a></li>
+        <li><a href="#">行內資料</a></li>
+        <li><a href="#">行外資料</a></li>
+        <li><a href="#">網頁資訊</a></li>
+        <li><a href="#">財務年收入試算</a></li>
+        <li><a href="#">保人資料</a></li>
+        <li><a href="#">本案影像</a></li>
+        <li><a href="#">AML</a></li>
+        <li><a href="#">加強盡職審查表</a></li>
+        <li><a href="#">專案檢核表</a></li>
+        <li><a href="#">同一關係人表</a></li>
+        <li><a href="#">II及DI比率計算</a></li>
+      </ul>
+    </div>
+    <div class="row mb-30">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>申請人</th>
+            <th>本行客戶</th>
+            <th>利害關係人</th>
+            <th>符合AML</th>
+            <th>戶政資料</th>
+            <th>信用卡循環金額</th>
+            <th>分期待付金額</th>
+            <th>現金卡餘額</th>
+            <th>無擔保授信金額</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>A123456789</td>
+            <td><span class="success">Y</span></td>
+            <td>N</td>
+            <td>N</td>
+            <td class="dangers">異常</td>
+            <td>120000</td>
+            <td>20000</td>
+            <td>3400000</td>
+            <td>0</td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th>本行卡友</th>
+            <th>特殊客戶</th>
+            <th>信用不良</th>
+            <th>年齡不符</th>
+            <th>工作年資不符</th>
+            <th>年收入不符</th>
+            <th>I/I比例不符</th>
+            <th>D/I比例不符</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="success">Y</span></td>
+            <td><span class="success">Y</span></td>
+            <td>N</td>
+            <td>N</td>
+            <td>N</td>
+            <td>N</td>
+            <td>N</td>
+            <td>N</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>評分結果</p>
+    <div class="row">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>姓名</th>
+            <th>身分證字號</th>
+            <th>月收入屬性</th>
+            <th>月平均收入</th>
+            <th>月收入倍數</th>
+            <th>系統建議額度</th>
+            <th>卡貸額度上限</th>
+            <th>承做利率</th>
+            <th>承做年限</th>
+            <th>信評結果</th>
+            <th>J10</th>
+          </tr>
+        </thead>
+        <tbody class="table-result">
+          <tr>
+            <td>林小明</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td colspan="3" rowspan="4">本案是否符合貸款額度限制</td>
+            <td>行員</td>
+            <td colspan="7">本筆借款+本行信貸餘額+本行信用卡循環金額+本行信用卡分期待付金額=萬&lt;100萬</td>
+            
+          </tr>
+          <tr>
+            <td class="bg-dark">本行利害關係人</td>
+            <td colspan="7" class="bg-dark">本筆借款+本行信貸餘額+本行信用卡循環金額+本行信用卡分期待付金額=萬&lt;100萬</td>
+            
+          </tr>
+          <tr>
+            <td>特殊客戶</td>
+            <td colspan="7">本筆借款+JCIC無擔金額=萬&lt;DBR15倍=萬</td>
+          </tr>
+          <tr>
+            <td class="bg-dark">非前述之一般戶</td>
+            <td colspan="7" class="bg-dark">本筆借款+本行信貸餘額=萬&lt;200萬</td>
+          </tr>
+          <tr>
+            <td colspan="3">本案是否符合貸款期限限制</td>
+            <td></td>
+            <td colspan="7">本筆借款+本行信貸餘額=萬&lt;200萬</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="row mb-30">
+      <form class="form-top">
+      <div class="form-group col-25">
+        <label for="" class="label">收件編號</label>
+        <input type="text" class="input">
+      </div>
+      <div class="form-group col-25">
+        <label for="" class="label">核貸模組</label>
+        <select name="核貸模組" id="" class="select">
+          <option value="N 08 專業人士">N 08 專業人士</option>
+        </select>
+      </div>
+      <div class="form-group col-25">
+        <label for="" class="label">DBR倍數</label>
+        <input type="text" class="input">
+      </div>
+      <div class="form-group col-25">
+        <label for="" class="label">補保人</label>
+        <select name="補保人" id="" class="select">
+          <option value="是">是</option>
+          <option value="否">否</option>
+        </select>
+      </div>
+      <div class="form-group col-25">
+        <label for="" class="label">申覆原因</label>
+        <input type="text" class="input">
+      </div>
+      <div class="form-group col-50">
+        <label for="" class="label">申覆說明</label>
+        <textarea name="申覆說明" class="textarea" id="" cols="80" rows="3"></textarea>
+      </div>
+      <div class="form-group col-25">
+        <label for="" class="label">原收件編號</label>
+        <input type="text" class="input">
+      </div>
+    </form>
+    </div>
+
+
+  </div>
+ 
+</body>
+</html>
